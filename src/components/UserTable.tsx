@@ -11,7 +11,6 @@ interface UserTableProps {
 export const UserTable = ({ users, isLoading, error }: UserTableProps) => {
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
-    console.log(users);
     return (
         <>
             {users.length > 0 && (
